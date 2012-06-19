@@ -40,7 +40,6 @@ public class BackScrollManager {
 
     private final AbsListView.OnScrollListener mScrollListener =
             new AbsListView.OnScrollListener() {
-                @Override
                 public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
                         int totalItemCount) {
                     if (firstVisibleItem != 0) {
@@ -60,7 +59,6 @@ public class BackScrollManager {
                     mHeader.setOffset(offset);
                 }
 
-                @Override
                 public void onScrollStateChanged(AbsListView view, int scrollState) {
                     // Nothing to do here.
                 }
